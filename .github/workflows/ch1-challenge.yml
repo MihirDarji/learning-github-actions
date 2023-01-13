@@ -22,9 +22,9 @@ jobs:
       - name: get-date3
       - run: echo "$now"
   job4:
+    needs: [job1, job2, job3]
     name: j4
     runs-on: windows-2016
     steps:
       - name: get-date4
       - run: "Get-Date"
-    needs: [job1, job2, job3]
