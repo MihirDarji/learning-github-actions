@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get-date
-      run: echo "$now"
+      run: echo "$now -"
   job2:
     name: j2
     runs-on: windows-latest
