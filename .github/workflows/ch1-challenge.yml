@@ -7,24 +7,24 @@ jobs:
     name: j1
     runs-on: ubuntu-latest
     steps:
-      - name: get date
+      - name: get-date
       run: echo "$now"
   job2:
     name: j2
     runs-on: windows-latest
     steps:
-      - name: get date
+      - name: get-date2
       run: "Get-Date"
   job3:
     name: j3
     runs-on: macos-latest
     steps:
-      - name: get date
+      - name: get-date3
       run: echo "$now"
   job4:
     name: j4
     runs-on: windows-2016
     steps:
-      - name: get date
+      - name: get-date4
       run: "Get-Date"
     needs: [job1, job2, job3]
