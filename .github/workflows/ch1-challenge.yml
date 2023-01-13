@@ -8,23 +8,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: get-date
-      run: echo "$now -"
+      - run: echo "$now -"
   job2:
     name: j2
     runs-on: windows-latest
     steps:
       - name: get-date2
-      run: "Get-Date"
+      - run: "Get-Date"
   job3:
     name: j3
     runs-on: macos-latest
     steps:
       - name: get-date3
-      run: echo "$now"
+      - run: echo "$now"
   job4:
     name: j4
     runs-on: windows-2016
     steps:
       - name: get-date4
-      run: "Get-Date"
+      - run: "Get-Date"
     needs: [job1, job2, job3]
